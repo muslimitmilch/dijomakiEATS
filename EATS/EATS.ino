@@ -16,6 +16,10 @@ int i;
 int measuredDistance = 0;
 int setupDistance = 0;
 
+//initialising objects
+Servo catapult;
+Servo bar;
+
 //list of signals (currently only IRsignal_ON)
 int IRsignal_ON[] = {
 // ON, OFF (in 10's of microseconds)
@@ -63,8 +67,7 @@ const int NumIRsignals_ON = 80;
 
 
 
-Servo catapult;
-Servo bar;
+
 void setup() {
   pinMode(pedalPin, INPUT_PULLUP);
   pinMode(IRledPinBett, OUTPUT);
@@ -77,7 +80,9 @@ void setup() {
   bar.attach(barPin);
   bar.write(65);
   setupDistance = getDistance();
-  delay(200);
+  playWindows();
+  delay(2500);
+  playDijomaki();
   Serial.println("fertig initialisiert");
 }
 
