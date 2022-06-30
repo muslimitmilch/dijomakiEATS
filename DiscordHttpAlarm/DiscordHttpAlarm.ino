@@ -4,8 +4,8 @@
 #define SERVER "https://discord.com/api/webhooks/955519218823098489/sQQWWHmfz7-h8-g3DF1tsMi1FoBEitLiyfXl5gtzcpzuC7QP-xKLCabJ6nzmlQgjqPVV"//discord Webhook adresse
 #define FINGERPRINT "7F 8C 3C 11 CB B1 87 28 AA 1B BF 7B E0 D0 49 64 A6 D3 DA 3A"
 #ifndef STASSID
-#define STASSID "Nida"                                                             //SSID des WLANs
-#define STAPSK  "Di1WSP!!"                                                          //Passwort des WLANs
+#define STASSID "SSID"                                                             //SSID des WLANs
+#define STAPSK  "PASSWORD!!"                                                          //Passwort des WLANs
 String message = "||@everyone|| :rotating_light: !!!ALARM!!! :rotating_light:  ||@everyone||";  //Nachricht
 const int trigPin = D6;
 const int echoPin = D7;
