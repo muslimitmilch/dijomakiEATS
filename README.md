@@ -1,2 +1,2 @@
 # dijomakiEATS
-Hallo Herr Weisel
+Schulprojekt für die Microcontrolling AG
